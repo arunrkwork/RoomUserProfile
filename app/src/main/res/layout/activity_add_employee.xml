@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddEmployeeActivity">
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edFirstName"
+                android:hint="First Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edLastName"
+                android:hint="Last Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:enabled="false"
+                    android:hint="Date"
+                    android:id="@+id/edDate"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:padding="10dp"
+                    android:id="@+id/btnImgDatePicker"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgPhoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:enabled="false"
+                    android:hint="File Name"
+                    android:id="@+id/edPhotoName"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:padding="10dp"
+                    android:id="@+id/btnImgPhotoPicker"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edAatharNumber"
+                android:hint="Aathar Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edQualification"
+                android:hint="Qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spDept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:inputType="textPostalAddress"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edAddress"
+                android:hint="Address"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <EditText
+                android:inputType="textPostalAddress"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edDistrict"
+                android:hint="District"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/fabAdd"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
